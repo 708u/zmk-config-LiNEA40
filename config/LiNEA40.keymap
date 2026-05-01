@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,
+            //スクロール方向を逆転,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -143,10 +143,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mo 5   &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans    &trans
             >;
         };
 
@@ -167,10 +167,10 @@
 
         CURSOR {
             bindings = <
-&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH     &trans
-&trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &kp SEMICOLON
-&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                    &kp GRAVE  &kp MINUS             &kp EQUAL              &kp COMMA         &kp PERIOD
-&trans    &trans                  &trans        &trans                   &trans  &trans    &trans  &trans                           &trans                 &trans            &trans
+&trans  &trans  &trans  &trans  &trans                    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH     &trans
+&trans  &trans  &trans  &trans  &trans                    &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &kp SEMICOLON
+&trans  &trans  &trans  &trans  &trans                    &kp GRAVE  &kp MINUS             &kp EQUAL              &kp COMMA         &kp PERIOD
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                           &trans                 &trans            &trans
             >;
         };
 
