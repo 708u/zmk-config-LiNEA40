@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -100,10 +100,10 @@
 
         default_layer {
             bindings = <
-&kp DELETE          &kp W         &kp E               &kp R    &kp T                                           &kp Y                   &kp U  &kp I                &kp O          &kp P
-&kp A               &kp S         &kp D               &kp F    &kp G                                           &kp H                   &kp J  &kp K                &kp L          &kp BACKSPACE
-&mt LEFT_SHIFT F12  &kp X         &kp C               &kp V    &kp B                                           &kp N                   &kp M  &kp P                &kp Z          &td_ctrl_q_to_shift
-&mt LCTRL ESC       &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 2 SPACE  &lt 3 TAB    &mt RIGHT_ALT ESCAPE  &mt LEFT_COMMAND ENTER         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
+&kp DELETE      &kp W         &kp E               &kp R    &kp T                                           &kp Y                   &kp U  &kp I                &kp O          &kp P
+&none           &kp S         &kp D               &kp F    &kp G                                           &kp H                   &kp J  &kp K                &kp L          &none
+&kp A           &kp X         &kp C               &kp V    &kp B                                           &kp N                   &kp M  &kp P                &kp Z          &kp BACKSPACE
+&mt LSHIFT F12  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 2 SPACE  &lt 3 TAB    &mt RIGHT_ALT ESCAPE  &mt LEFT_COMMAND ENTER         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &td_ctrl_q_to_shift
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -125,8 +125,8 @@
         MARK {
             bindings = <
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)        &kp LS(NUMBER_4)                    &kp LS(NUMBER_5)  &kp RS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &trans
-&mo 5   &kp KP_NUMBER_4   &kp KP_NUMBER_5   &mt LEFT_COMMAND ENTER  &kp SEMICOLON                       &kp LEFT_ARROW    &kp DOWN          &kp UP_ARROW      &kp RIGHT         &trans
-&trans  &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp APOS                &kp SQT                             &trans            &kp LANG2         &kp LANG1         &trans            &trans
+&trans  &kp KP_NUMBER_4   &kp KP_NUMBER_5   &mt LEFT_COMMAND ENTER  &kp SEMICOLON                       &kp LEFT_ARROW    &kp DOWN          &kp UP_ARROW      &kp RIGHT         &trans
+&mo 5   &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp APOS                &kp SQT                             &trans            &kp LANG2         &kp LANG1         &trans            &trans
 &trans  &trans            &trans            &trans                  &trans            &trans    &trans  &trans                              &trans            &trans            &trans
             >;
 
@@ -138,9 +138,9 @@
         CURSOR {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH     &trans
-&trans  &trans  &trans  &trans  &trans                    &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &kp SEMICOLON
-&trans  &trans  &trans  &trans  &trans                    &kp GRAVE  &kp MINUS             &kp EQUAL              &kp COMMA         &kp PERIOD
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                           &trans                 &trans            &trans
+&trans  &trans  &trans  &trans  &trans                    &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &trans
+&trans  &trans  &trans  &trans  &trans                    &kp GRAVE  &kp MINUS             &kp EQUAL              &kp COMMA         &kp SEMICOLON
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                           &trans                 &trans            &kp DOT
             >;
         };
 
